@@ -1,0 +1,289 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+header img{
+    height: 100px;      
+    padding-left: 100px; 
+}
+.titre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre h1{
+    font-size: 65px;
+    margin: 0px;
+    font-weight: bold;
+}
+#leDiapo{
+    display: block;  
+}
+#slider{  
+    height: 400px;
+    margin-bottom: 68px;
+    background-color: bisque;
+}
+.diapo{
+    background-color: bisque;
+}
+#slider img{
+    display: block;
+    height: 435px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slider p{
+    text-align: center;
+    font-size: 25px;
+    background-color: hotpink;
+}
+.navSlider{    
+    text-align: center;
+    background-color: hotpink;
+}
+.navSlider .fas{
+        font-size: 25px;    
+}
+#openMap{
+    z-index: 1;
+    display: flex;
+}
+#myMap{  
+    z-index: 1;
+    width: 75%;
+    height: 650px;
+    border: 1px solid black;
+}
+.infoResa{       
+    height: 650px;
+    width: 25%;
+    border: 1px solid black;    
+}
+.infoResa h2{
+    text-align: center;
+    text-transform: uppercase;      
+}
+.infoResa p, label{
+    font-weight: bold;    
+}
+.infoResa .style{
+    font-style: italic;
+}
+#nomPrenom{
+    text-transform: uppercase;
+}
+#erreur, #formulaire, #validation{
+    display: none;
+}
+#draw{
+    z-index:250;
+    position: absolute;
+    background: blue;
+    width: 450px;
+    height: 350px;
+    right: 583px;
+    margin-top: 5%;
+    border-radius: 10px;
+    touch-action: none;
+    visibility: hidden;
+}
+#sign{    
+    border: solid 1px black;    
+    border-radius: 5px; 
+    margin-left: 5%; 
+    margin-top: 25px;
+    background-color:white;  
+    width: 400px;
+    height: 250px;   
+}
+.btn{
+    margin-left: 42px;
+}
+#validation{
+    background-color:blue;  
+    text-align: center;     
+}
+#validation p{
+    color: white;
+}
+#raze{
+    margin-bottom: 12px;
+}
+@media screen and (max-width:1140px){
+    #slider{
+        height: 350px;
+    }
+    #slider img{
+        height: 380px;
+    }
+    #draw{
+        right: 500px;
+    }
+}
+@media screen and (max-width:1000px){
+    #slider{
+        height: 300px;
+    }
+    #slider img{
+        height: 345px;
+    }
+    #draw{
+        right: 305px
+    }
+}
+@media screen and (max-width: 940px){
+    #openMap{
+        flex-direction: column;
+    }
+    #myMap {               
+        width: 100%;
+        height: 400px;      
+    }
+    .infoResa{
+        width: 100%;
+        height: 495px;        
+    }
+    .infoResa p, label{
+        margin-left: 48px;
+    }
+    #draw{
+        width: 400px;
+        height: 300px;                  
+        margin-top: 470px;
+        right: 132px;           
+    }
+    #sign{
+        width: 350px;
+        height: 200px;
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width:860px){
+    #slider{
+        height: 255px;
+    }
+    #slider img{
+        height: 285px;
+    }
+    #draw{                        
+        margin-top: 572px;
+        right: 184px;           
+    }
+}
+@media screen and (max-width:748px){
+    header img{
+        height: 60px;
+        padding-left: 40px;
+    }  
+    .titre h1 {
+        font-size: 45px;       
+    }
+    #slider{
+        height: 215px;
+    }
+    #slider img{
+        height: 245px;
+    }
+    #draw{
+       right: 156px;
+    }
+}
+@media screen and (max-width:640px){
+    #slider{
+        height: 182px;
+    }
+    #slider img{
+        height: 220px;
+    }
+    #slider p{
+        font-size: 20px;
+    }
+    .navSlider .fas{
+        font-size: 20px;
+    }
+    #myMap{
+        height: 350px;
+    }
+    #draw{
+        width: 350px;
+        height: 275px;
+        right: 12%;
+        margin-top: 545px;
+    }
+    #sign{
+        width: 300px;
+        height: 200px;
+        margin-left: 6%;
+    }
+    .btn{
+        margin-left: 22px;
+    }
+}
+@media screen and (max-width:578px){
+    #slider{
+        height: 172px;
+    }
+    #slider img{
+        height: 180px;
+    }
+    #slider p{
+        padding-bottom: 34px;
+    }
+}
+@media screen and (max-width:460px){
+    header img{
+        height: 35px;
+        padding-left: 24px;
+    }
+    .titre h1{
+        font-size: 30px;
+        margin: 10px 0 0 0;
+    }
+    #slider{
+        height: 143px;
+    }
+    #slider img{
+        height: 147px;
+    }
+    #reserver{
+        margin-left: 48px;
+    }
+    #draw{
+        margin-left: 12%;
+    }
+    #sign{
+        margin-left: 7%;
+    }
+    #slider p{
+        padding-bottom: 34px;
+    }
+}
+@media screen and (max-width:380px){   
+    #slider{
+        height: 133px;
+    }
+    #slider img{
+        height: 140px;
+    }   
+    .infoResa h2{
+        font-size: 25px;
+    }
+    #draw {
+        width: 286px;
+        height: 305px;
+        margin-top: 538px;
+        right: 3%;
+    }
+    #sign{
+        width: 252px;
+        margin-left: 6%;
+    }
+}

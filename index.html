@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Cyclo'Toulouse</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+</head>
+<body>
+    <header>        
+        <img src="img/logo.png" alt="logo Vél'lyon">
+        <div class="titre">
+            <h1>Cyclo'Toulouse</h1> 
+            <p>La location de vélo en toute simplicité</p>         
+        </div>        
+    </header>
+    <div id="leDiapo"> 
+        <div id="slider"></div>
+        <div class="navSlider">             
+            <i id="previousBtn" class="fas fa-chevron-circle-left"> </i>                 
+            <i id="stopBtn" class="fas fa-pause-circle"> </i>                                                
+            <i id="nextBtn" class="fas fa-chevron-circle-right"> </i>                             
+          </div>
+        </div>    
+    <div id="openMap">
+        <div id="myMap"></div>                 
+        <div class="infoResa">
+            <h2>Information station</h2>
+            <p id="nStation">Nom: <span class="style" id="nomStation"></span></p>
+            <p id="adStation">Adresse: <span class="style" id="adress"></span></p>
+            <p id="eStation">Etat station: <span class="style" id="etat"></span></p>          
+            <p id="nPlace">Emplacement libre: <span class="style" id="pDispo"></span></p>
+            <p id="nVelo">Vélo disponible: <span class="style" id="vDispo"></span></p>      
+            <form id="formulaire">
+                <p>* saisie obligatoire.</p>    
+                <label for="name">*Nom:</label>
+                <input id="name" type="text" name="nom" required><br>
+                <label for="prenom">*Prénom:</label>
+                <input id="prenom" type="text" name="prenom" required><br>                           
+                <input id="reserver" type="button" value="Réserver">                          
+            </form>
+               <p id="erreur"></p>                                     
+        </div> 
+        <div id="draw">                                                          
+            <canvas id="sign"></canvas>
+            <div class="btn">
+            <button type="button" id="ok">
+                <i class="fas fa-check-circle"> Valider</i> 
+            </button> 
+            <button type="button" id="clean">
+                <i class="fas fa-undo"> Recommencer</i>   
+            </button>  
+            </div>                            
+        </div>
+    </div> 
+    <div id="validation">
+            <p id="retour"><span id="station"></span><span id="nomPrenom"></span></p>                        
+            <p id="topChrono"></p>
+            <button type="button" id="raze"> 
+                <i class="fas fa-times-circle"> Annuler</i>                   
+            </button>            
+    </div>    
+<script type="text/javascript" src="js/diaporama.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>  
+<script type="text/javascript" src="js/carte.js"></script> 
+<script type="text/javascript" src="js/reservation.js"></script>
+<script type="text/javascript" src="js/signature.js"></script>
+<script type="text/javascript" src="js/main.js"></script>   
+</body>    
+</html>
