@@ -1,4 +1,4 @@
-# projet3-Concevez-une-carte-interactive-de-location-de-v-los
+# projet3-Concevez-une-carte-interactive-de-location-de-velos
 
 Proget dans le cadre de la formation développeur web junior chez openclassroom. 
 Compétences évaluées:
